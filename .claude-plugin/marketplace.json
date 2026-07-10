@@ -1,0 +1,98 @@
+{
+  "name": "sensei",
+  "owner": {
+    "name": "kitoep"
+  },
+  "description": "Marketplace personal: skills de ingeniería senior para llevar cualquier modelo al estándar de razonamiento deseado. Instala la suite completa (senior-engineer) O los skills individuales — no ambos.",
+  "plugins": [
+    {
+      "name": "senior-engineer",
+      "source": "./senior-engineer",
+      "description": "SUITE COMPLETA (los 12 skills). Instala esta O los individuales, no ambos."
+    },
+    {
+      "name": "senior-engineer-planning",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/planning"],
+      "description": "Planear como senior: 5 capas de preguntas, reconciliar contra el tracker ANTES, descomposición verificable por riesgo."
+    },
+    {
+      "name": "senior-engineer-architect",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/architect"],
+      "description": "Arquitectura por condiciones reales: intake de 9 preguntas, desinfla fantasías de escala, cada elección trazada a una condición."
+    },
+    {
+      "name": "senior-engineer-project-bootstrap",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/project-bootstrap"],
+      "description": "Arranque de proyectos: cero código antes del intake, cimientos imposibles de retrofitear (multi-tenancy) el día 1."
+    },
+    {
+      "name": "senior-engineer-designer",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/designer"],
+      "description": "UI no genérica: puerta dura de design system antes de cualquier pantalla, 12 tells de diseño IA, 4 estados obligatorios."
+    },
+    {
+      "name": "senior-engineer-critic",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/critic"],
+      "description": "Crítica técnica honesta sin adulación: veredicto primero, steelman, mínimo 3 riesgos + 1 alternativa, mantener posición."
+    },
+    {
+      "name": "senior-engineer-fixer",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/fixer"],
+      "description": "Debugging con puertas duras: sin reproducción no hay fix, causa raíz, test de regresión visto fallar, protocolo sigue-fallando."
+    },
+    {
+      "name": "senior-engineer-tester",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/tester"],
+      "description": "Plan de pruebas desde invariantes: adversarial primero, UI incluida siempre, veredicto con evidencia."
+    },
+    {
+      "name": "senior-engineer-security",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/security-compliance"],
+      "description": "Auditoría de seguridad (AUDIT) y reglas preventivas (GUARD): OWASP, RLS/multi-tenant, LFPDPPP/GDPR/PCI, tests adversariales."
+    },
+    {
+      "name": "senior-engineer-verificador",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/verificador"],
+      "description": "Anti-falso-verde: nada se declara terminado sin evidencia ejecutada y pegada; 'verificado' vs 'aplicado, sin verificar'."
+    },
+    {
+      "name": "senior-engineer-esquema-datos",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/esquema-datos"],
+      "description": "Schemas y migraciones que no rompen prod: intake antes de diseñar, expand/contract, constraints en DB, índices con EXPLAIN."
+    },
+    {
+      "name": "senior-engineer-features-ia",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/features-ia"],
+      "description": "Features con LLMs sin inventar: capa agnóstica de proveedor, tool-calling con contratos, guardrails, golden set de evals."
+    },
+    {
+      "name": "senior-engineer-entrega-git",
+      "source": "./senior-engineer",
+      "strict": false,
+      "skills": ["./skills/entrega-git"],
+      "description": "Commits atómicos con diff revisado (nunca add . a ciegas), PRs de un tema, descripciones auditables con evidencia."
+    }
+  ]
+}
