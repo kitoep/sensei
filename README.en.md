@@ -22,7 +22,7 @@ Inside Claude Code:
 The suite ships in **two languages** — install one or the other (not both):
 
 - `senior-engineer-en@sensei` — **English** (skills `senior-engineer-en:*`)
-- `senior-engineer@sensei` — **Spanish** (skills `senior-engineer:*`)
+- `senior-engineer-es@sensei` — **Spanish** (skills `senior-engineer-es:*`)
 
 Why two versions instead of one auto-translated? Because each skill's "forbidden-phrase" tables literally match what the model is about to write; if you code in English your agent replies in English and needs the English tables to fire. In `/plugin` → **Discover** you'll see both and pick one.
 
@@ -33,8 +33,9 @@ The wizard asks for scope: **User** (all your sessions) or **Project** (current 
 Don't want all 12? Each skill can be installed separately (same file copy; pick suite **or** individual skills, not both):
 
 ```
-/plugin install senior-engineer-fixer@sensei
-/plugin install senior-engineer-esquema-datos@sensei
+/plugin install fixer-en@sensei           # English (individual skills use the -en suffix)
+/plugin install data-schema-en@sensei
+/plugin install fixer-es@sensei               # ... or Spanish (no suffix)
 ```
 
 Or visually: `/plugin` → **Discover** tab → pick from the list. Individual skills work standalone — cross-references are conditional and don't require the rest of the suite.
@@ -44,7 +45,7 @@ Or visually: `/plugin` → **Discover** tab → pick from the list. Individual s
 ```
 /plugin marketplace update sensei
 /reload-plugins
-/plugin uninstall senior-engineer@sensei
+/plugin uninstall senior-engineer-en@sensei
 ```
 
 ## The 12 skills
@@ -59,10 +60,10 @@ Or visually: `/plugin` → **Discover** tab → pick from the list. Individual s
 | `fixer` | Debugging with gates: no reproduction, no fix; falsifiable hypotheses; root cause and symmetric-pattern search across the repo; the regression test must be SEEN failing; "still failing" protocol. |
 | `tester` | Test plans derived from invariants (adversarial first, happy path last); UI is always included; nothing is declared tested with P1-P2 cases pending. |
 | `security-compliance` | Audit (AUDIT) and prevention (GUARD): OWASP with grep patterns, multi-tenant isolation/RLS, data protection (GDPR/LFPDPPP/PCI), severity only with a verified scenario, adversarial tests. |
-| `verificador` | Anti-"fake green": nothing is declared done without executed, pasted evidence; evidence ladder per task type; "verified" ≠ "applied, unverified"; the ✅ is earned, not given. |
-| `esquema-datos` | Schemas and migrations that don't break production: query/volume intake before designing; never float for money; expand/contract for every incompatible change; DB constraints as the final guarantee; indexes verified with EXPLAIN. |
-| `features-ia` | LLM features without making things up: model names/params must be verified against current docs, never from memory; one provider-agnostic layer; tool-calling with strict contracts and per-user scoping; injection guardrails; a golden eval set gates every prompt change. |
-| `entrega-git` | Atomic commits with the diff reviewed file by file (never blind `git add .`); messages that carry the why; single-topic PRs with auditable descriptions; destructive operations forbidden without an explicit request. |
+| `verifier` | Anti-"fake green": nothing is declared done without executed, pasted evidence; evidence ladder per task type; "verified" ≠ "applied, unverified"; the ✅ is earned, not given. |
+| `data-schema` | Schemas and migrations that don't break production: query/volume intake before designing; never float for money; expand/contract for every incompatible change; DB constraints as the final guarantee; indexes verified with EXPLAIN. |
+| `ai-features` | LLM features without making things up: model names/params must be verified against current docs, never from memory; one provider-agnostic layer; tool-calling with strict contracts and per-user scoping; injection guardrails; a golden eval set gates every prompt change. |
+| `git-delivery` | Atomic commits with the diff reviewed file by file (never blind `git add .`); messages that carry the why; single-topic PRs with auditable descriptions; destructive operations forbidden without an explicit request. |
 
 ## How they're built
 
@@ -73,7 +74,7 @@ Or visually: `/plugin` → **Discover** tab → pick from the list. Individual s
 
 ## Manual install (no plugin)
 
-Copy the folders under `senior-engineer/skills/` into your personal skills directory (`~/.claude/skills/`) and restart the session. You lose automatic marketplace updates.
+Copy the folders under `senior-engineer-en/skills/` (or `senior-engineer-es/skills/`) into your personal skills directory (`~/.claude/skills/`) and restart the session. You lose automatic marketplace updates.
 
 ## License
 

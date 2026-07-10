@@ -14,12 +14,12 @@ Dentro de Claude Code:
 
 ```
 /plugin marketplace add kitoep/sensei
-/plugin install senior-engineer@sensei        # español
+/plugin install senior-engineer-es@sensei        # español
 ```
 
 El paquete viene en **dos idiomas** — instala uno u otro (no ambos):
 
-- `senior-engineer@sensei` — **español** (skills `senior-engineer:*`)
+- `senior-engineer-es@sensei` — **español** (skills `senior-engineer-es:*`)
 - `senior-engineer-en@sensei` — **English** (skills `senior-engineer-en:*`)
 
 ¿Por qué dos versiones y no una traducida al vuelo? Porque las tablas de "frases prohibidas" de cada skill cazan literalmente lo que el modelo está a punto de escribir; si programas en inglés, tu agente responde en inglés y necesita la versión en inglés para que esas tablas funcionen. En `/plugin` → **Discover** ves ambas y eliges.
@@ -31,8 +31,9 @@ El wizard pregunta el scope: **User** (todas tus sesiones) o **Project** (solo e
 ¿No quieres los 12? Cada skill también es instalable por separado (misma copia de archivos; elige suite **o** individuales, no ambos):
 
 ```
-/plugin install senior-engineer-fixer@sensei
-/plugin install senior-engineer-esquema-datos@sensei
+/plugin install fixer-es@sensei              # español
+/plugin install esquema-datos-es@sensei
+/plugin install fixer-en@sensei           # English (sufijo -en)
 ```
 
 O visual: `/plugin` → pestaña **Discover** → elige de la lista. Los skills individuales funcionan solos — sus referencias cruzadas son condicionales y no dependen de que el resto esté instalado.
@@ -42,7 +43,7 @@ O visual: `/plugin` → pestaña **Discover** → elige de la lista. Los skills 
 ```
 /plugin marketplace update sensei      # trae la última versión del repo
 /reload-plugins
-/plugin uninstall senior-engineer@sensei
+/plugin uninstall senior-engineer-es@sensei
 ```
 
 ## Los 12 skills
@@ -71,7 +72,7 @@ O visual: `/plugin` → pestaña **Discover** → elige de la lista. Los skills 
 
 ## Instalación manual (sin plugin)
 
-Copia las carpetas de `senior-engineer/skills/` a tu directorio personal de skills (`~/.claude/skills/`) y reinicia la sesión. Pierdes las actualizaciones automáticas del marketplace.
+Copia las carpetas de `senior-engineer-es/skills/` (o `senior-engineer-en/skills/`) a tu directorio personal de skills (`~/.claude/skills/`) y reinicia la sesión. Pierdes las actualizaciones automáticas del marketplace.
 
 ## Licencia
 
