@@ -14,10 +14,17 @@ Dentro de Claude Code:
 
 ```
 /plugin marketplace add kitoep/sensei
-/plugin install senior-engineer@sensei
+/plugin install senior-engineer@sensei        # español
 ```
 
-El wizard pregunta el scope: **User** (todas tus sesiones) o **Project** (solo el proyecto actual). Luego `/reload-plugins` o reinicia la sesión, y verifica con `/` que aparezcan los skills `senior-engineer:*`.
+El paquete viene en **dos idiomas** — instala uno u otro (no ambos):
+
+- `senior-engineer@sensei` — **español** (skills `senior-engineer:*`)
+- `senior-engineer-en@sensei` — **English** (skills `senior-engineer-en:*`)
+
+¿Por qué dos versiones y no una traducida al vuelo? Porque las tablas de "frases prohibidas" de cada skill cazan literalmente lo que el modelo está a punto de escribir; si programas en inglés, tu agente responde en inglés y necesita la versión en inglés para que esas tablas funcionen. En `/plugin` → **Discover** ves ambas y eliges.
+
+El wizard pregunta el scope: **User** (todas tus sesiones) o **Project** (solo el proyecto actual). Luego `/reload-plugins` o reinicia la sesión.
 
 ### À la carte
 

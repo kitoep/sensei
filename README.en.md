@@ -8,7 +8,7 @@
 
 These are not "tips" — they are prescriptive protocols: checklists, templates and exact rules, written so the model cannot rely on its own judgment or rationalize exceptions. Every skill ships with its table of known rationalizations ("it's a trivial change", "no time for tests"...) and the reality next to each one, closing the exits.
 
-> ⚠️ **Skill content is written in Spanish (by design).** The forbidden-phrase tables literally match what the model is about to write in Spanish, and the suite was validated with Spanish prompts. The skills still trigger and work in English sessions — frontmatter descriptions are in English — but Spanish-speaking workflows get the full effect.
+> This suite comes in two fully native versions — install `senior-engineer-en` for English or `senior-engineer` for Spanish. Each is authored in its language (not auto-translated) so the forbidden-phrase tables match what the model actually writes.
 
 ## Install
 
@@ -16,10 +16,17 @@ Inside Claude Code:
 
 ```
 /plugin marketplace add kitoep/sensei
-/plugin install senior-engineer@sensei
+/plugin install senior-engineer-en@sensei     # English
 ```
 
-The wizard asks for scope: **User** (all your sessions) or **Project** (current project only). Then `/reload-plugins` or restart the session, and check with `/` that the `senior-engineer:*` skills appear.
+The suite ships in **two languages** — install one or the other (not both):
+
+- `senior-engineer-en@sensei` — **English** (skills `senior-engineer-en:*`)
+- `senior-engineer@sensei` — **Spanish** (skills `senior-engineer:*`)
+
+Why two versions instead of one auto-translated? Because each skill's "forbidden-phrase" tables literally match what the model is about to write; if you code in English your agent replies in English and needs the English tables to fire. In `/plugin` → **Discover** you'll see both and pick one.
+
+The wizard asks for scope: **User** (all your sessions) or **Project** (current project only). Then `/reload-plugins` or restart the session.
 
 ### À la carte
 
