@@ -2,11 +2,11 @@
 
 Español | [English](README.en.md)
 
-**Disciplina de ingeniero senior para Claude Code.**
+**Skills para Claude Code que hacen que el modelo trabaje como un senior y no como un junior con prisa.**
 
-Son 12 skills que le meten a cualquier modelo la forma de trabajar de un ingeniero con años de experiencia. En vez de dejar que el modelo improvise, lo obligan a frenar antes de actuar, a probar las cosas antes de decir que ya quedaron, a darte una opinión honesta en lugar de darte por tu lado, y a no inventar en las decisiones que salen caras: bases de datos, arquitectura, seguridad y features con IA.
+Por default el modelo improvisa, te dice que "ya quedó" sin haberlo corrido, y te da la razón en todo. Estos 12 skills lo frenan. Le exigen preguntar antes de tirar código, correr las cosas antes de cantar victoria, y decirte cuando algo está mal aunque no lo quieras oír. Y en lo que sale caro de deshacer después (base de datos, arquitectura, seguridad, bots con IA) no lo dejan agarrar el camino fácil.
 
-No son consejos sueltos. Cada skill es un protocolo con checklists, plantillas y reglas concretas, hecho para que el modelo no dependa de su criterio ni se saque excusas. Cada uno trae también una tabla con las excusas típicas ("es un cambio chico", "no da tiempo de hacer tests") y la realidad al lado, para cerrarle esas salidas.
+Cada skill trae reglas concretas: checklists, plantillas, y la lista de excusas que el modelo suele soltar ("es un cambio chico", "al rato le pongo tests") para no dejárselas pasar.
 
 ## Instalación
 

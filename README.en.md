@@ -2,11 +2,11 @@
 
 [Español](README.md) | English
 
-**Senior-engineer discipline for Claude Code.**
+**Skills for Claude Code that make the model work like a senior, not a junior in a hurry.**
 
-12 skills that make any model work like an engineer with real years behind them. Instead of letting the model improvise, they force it to stop before acting, to actually run things before saying they're done, to give you an honest opinion instead of telling you what you want to hear, and to stop winging the expensive decisions: databases, architecture, security, and AI features.
+By default the model improvises, tells you it's "done" without having run it, and agrees with everything you say. These 12 skills put a stop to that. They make it ask before dumping code, run things before claiming victory, and tell you when something's wrong even if you don't want to hear it. And on the stuff that's expensive to undo later (databases, architecture, security, AI bots) they don't let it take the easy way out.
 
-They're not loose tips. Each skill is a protocol with checklists, templates and concrete rules, built so the model doesn't lean on its own judgment or talk itself into exceptions. Each one also ships with a table of the usual excuses ("it's a small change", "no time for tests") and the reality right next to them, to close those exits.
+Each skill comes with concrete rules: checklists, templates, and the list of excuses the model tends to reach for ("it's a small change", "I'll add tests later") so it can't get away with them.
 
 ## Install
 
