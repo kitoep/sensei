@@ -8,12 +8,12 @@
     {
       "name": "senior-engineer-es",
       "source": "./senior-engineer-es",
-      "description": "[ES] SUITE COMPLETA con los 13 skills en español. Instala esta O los individuales, no ambos."
+      "description": "[ES] SUITE COMPLETA con los 15 skills en español. Instala esta O los individuales, no ambos."
     },
     {
       "name": "senior-engineer-en",
       "source": "./senior-engineer-en",
-      "description": "[EN] FULL SUITE with the 13 skills in English. Install this OR the individual ones, not both."
+      "description": "[EN] FULL SUITE with the 15 skills in English. Install this OR the individual ones, not both."
     },
 
     {
@@ -107,6 +107,20 @@
       "skills": ["./skills/entrega-git"],
       "description": "[ES] Commits de una sola cosa con el diff revisado, PRs de un tema, nada destructivo sin que se lo pidas."
     },
+    {
+      "name": "correcciones",
+      "source": "./senior-engineer-es",
+      "strict": false,
+      "skills": ["./skills/correcciones"],
+      "description": "[ES] Recibir correcciones sin plegarse: verificar antes de aceptar, no ceder a la insistencia, corregirse sin teatro, destapar errores propios."
+    },
+    {
+      "name": "crear-skills",
+      "source": "./senior-engineer-es",
+      "strict": false,
+      "skills": ["./skills/crear-skills"],
+      "description": "[ES] El método para fabricar skills: falla baseline identificada, convenciones de la suite, prueba RED/GREEN con trampas y verificación en disco."
+    },
 
     {
       "name": "shaping",
@@ -198,6 +212,20 @@
       "strict": false,
       "skills": ["./skills/git-delivery"],
       "description": "[EN] Atomic commits with reviewed diff, single-topic PRs, auditable descriptions."
+    },
+    {
+      "name": "receiving-feedback",
+      "source": "./senior-engineer-en",
+      "strict": false,
+      "skills": ["./skills/receiving-feedback"],
+      "description": "[EN] Take corrections without caving: verify before accepting, don't yield to insistence, own mistakes without theater, surface your own errors."
+    },
+    {
+      "name": "skill-building",
+      "source": "./senior-engineer-en",
+      "strict": false,
+      "skills": ["./skills/skill-building"],
+      "description": "[EN] The method for building skills: named baseline failure, suite conventions, RED/GREEN testing with traps and on-disk verification."
     }
   ]
 }

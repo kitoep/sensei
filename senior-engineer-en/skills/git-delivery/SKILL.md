@@ -28,6 +28,17 @@ Work isn't delivered when the code works: it's delivered when a human reviewer c
 - `commit --amend` or `rebase` of already-pushed commits.
 - Skipping hooks (`--no-verify`) or signatures.
 
+## When the work is done: the user decides what happens to it
+
+When the branch's work is complete, don't decide the next step yourself. First run the test suite (if anything fails there is no closing: fix it first), then present this menu as is:
+
+1. Merge into the base branch locally
+2. Push and open a PR
+3. Leave the branch as is (the user will handle it)
+4. Discard this work
+
+Execute whichever option they pick, and nothing else.
+
 ## Red flags — STOP if you catch yourself thinking this
 
 - "`git add .` and done, I know what I changed" → you don't. Stray files, `.env`, and builds get in exactly like that. Diff first.

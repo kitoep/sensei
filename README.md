@@ -4,7 +4,7 @@ Español | [English](README.en.md)
 
 **Skills para Claude Code que hacen que el modelo trabaje como un senior y no como un junior con prisa.**
 
-Por default el modelo improvisa, te dice que "ya quedó" sin haberlo corrido, y te da la razón en todo. Estos 13 skills lo frenan. Le exigen preguntar antes de tirar código, correr las cosas antes de cantar victoria, y decirte cuando algo está mal aunque no lo quieras oír. Y en lo que sale caro de deshacer después (base de datos, arquitectura, seguridad, bots con IA) no lo dejan agarrar el camino fácil.
+Por default el modelo improvisa, te dice que "ya quedó" sin haberlo corrido, y te da la razón en todo. Estos 15 skills lo frenan. Le exigen preguntar antes de tirar código, correr las cosas antes de cantar victoria, y decirte cuando algo está mal aunque no lo quieras oír. Y en lo que sale caro de deshacer después (base de datos, arquitectura, seguridad, bots con IA) no lo dejan agarrar el camino fácil.
 
 Cada skill trae reglas concretas: checklists, plantillas, y la lista de excusas que el modelo suele soltar ("es un cambio chico", "al rato le pongo tests") para no dejárselas pasar.
 
@@ -28,7 +28,7 @@ El wizard te pregunta el alcance: **User** para todas tus sesiones, o **Project*
 
 ### Un skill a la vez
 
-Si no quieres los 13, cada skill se instala por separado (es la misma copia de archivos; instala la suite completa o los sueltos, no las dos cosas):
+Si no quieres los 15, cada skill se instala por separado (es la misma copia de archivos; instala la suite completa o los sueltos, no las dos cosas):
 
 ```
 /plugin install reparador@sensei
@@ -46,7 +46,7 @@ También puedes hacerlo visual: en `/plugin` entras a **Discover** y eliges de l
 /plugin uninstall senior-engineer-es@sensei
 ```
 
-## Los 13 skills
+## Los 15 skills
 
 | Skill | Qué le obliga a hacer al modelo |
 |---|---|
@@ -62,7 +62,9 @@ También puedes hacerlo visual: en `/plugin` entras a **Discover** y eliges de l
 | `verificador` | Nada se declara terminado sin la prueba de que corre, pegada en el mismo mensaje. Distingue entre "verificado" y "lo apliqué pero no lo probé", y no reparte la palomita ✅ de a gratis. |
 | `esquema-datos` | Bases de datos y migraciones que no tumban producción. Pregunta por las consultas y el volumen antes de diseñar, nunca usa float para el dinero, hace los cambios peligrosos en dos pasos (expand/contract), pone los candados en la base de datos y comprueba los índices con EXPLAIN. |
 | `features-ia` | Features con LLMs sin inventar. Tiene prohibido escribir nombres de modelo o parámetros de memoria (los verifica contra la documentación), mete todo detrás de una sola capa que no depende del proveedor, arma las tools con contratos estrictos y filtrando por usuario, pone defensas contra prompt injection y no deja cambiar un prompt sin correr su set de pruebas. |
-| `entrega-git` | Commits de una sola cosa, con el diff revisado archivo por archivo (nunca `git add .` a ciegas). Los mensajes explican el porqué, no el qué. Los PR tratan un solo tema y traen una descripción que se puede auditar. Nada destructivo sin que se lo pidas. |
+| `entrega-git` | Commits de una sola cosa, con el diff revisado archivo por archivo (nunca `git add .` a ciegas). Los mensajes explican el porqué, no el qué. Los PR tratan un solo tema y traen una descripción que se puede auditar. Nada destructivo sin que se lo pidas, y al terminar te presenta las opciones (merge, PR, dejar, descartar) en vez de decidir solo. |
+| `correcciones` | Cuando lo corriges, verifica contra el código antes de darte la razón (puedes tener razón, no tenerla, o tenerla a medias). No se pliega a la pura insistencia: pide el argumento nuevo. Si el equivocado es él, lo dice seco y corrige, sin párrafos de disculpas. Y si descubre un error suyo que no has visto, te lo destapa él primero. |
+| `crear-skills` | El método para fabricar skills nuevos con este estándar: primero la falla concreta del modelo que corrige (sin falla identificada no hay skill), las convenciones de la suite, y la prueba obligada antes de publicar: mismo pedido con y sin el skill sobre un proyecto con trampas, verificando el resultado en disco. |
 
 ## Cómo están hechos
 

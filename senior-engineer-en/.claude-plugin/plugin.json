@@ -1,7 +1,7 @@
 {
   "name": "senior-engineer-en",
-  "description": "13 skills that install senior-engineer discipline into any model: planning, architecture, debugging, testing, security, DB schemas, LLM features, git, UI design and anti-fake-green rigor. English content, prescriptive, with hard gates.",
-  "version": "1.1.0",
+  "description": "15 skills that install senior-engineer discipline into any model: planning, architecture, debugging, testing, security, DB schemas, LLM features, git, UI design and anti-fake-green rigor. English content, prescriptive, with hard gates.",
+  "version": "1.2.0",
   "author": {
     "name": "kitoep"
   },

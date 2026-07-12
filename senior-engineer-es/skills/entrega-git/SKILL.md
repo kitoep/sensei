@@ -28,6 +28,17 @@ El trabajo no se entrega cuando el código funciona: se entrega cuando un reviso
 - `commit --amend` o `rebase` de commits ya pusheados.
 - Saltarse hooks (`--no-verify`) o firmas.
 
+## Al terminar el trabajo: el destino lo decide el usuario
+
+Cuando el trabajo del branch quedó completo, no decidas tú qué sigue. Primero corre la suite de tests (si falla algo, no hay cierre: se arregla primero) y luego presenta este menú tal cual:
+
+1. Mergear a la base localmente
+2. Pushear y abrir un PR
+3. Dejar el branch como está (el usuario lo maneja después)
+4. Descartar este trabajo
+
+Ejecutas la opción que elija, y nada más.
+
 ## Red flags — DETENTE si te descubres pensando esto
 
 - "`git add .` y listo, ya sé qué cambié" → no lo sabes. Archivos accidentales, `.env` y builds entran exactamente así. Diff primero.
