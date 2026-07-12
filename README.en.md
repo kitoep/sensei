@@ -4,7 +4,7 @@
 
 **Skills for Claude Code that make the model work like a senior, not a junior in a hurry.**
 
-By default the model improvises, tells you it's "done" without having run it, and agrees with everything you say. These 12 skills put a stop to that. They make it ask before dumping code, run things before claiming victory, and tell you when something's wrong even if you don't want to hear it. And on the stuff that's expensive to undo later (databases, architecture, security, AI bots) they don't let it take the easy way out.
+By default the model improvises, tells you it's "done" without having run it, and agrees with everything you say. These 13 skills put a stop to that. They make it ask before dumping code, run things before claiming victory, and tell you when something's wrong even if you don't want to hear it. And on the stuff that's expensive to undo later (databases, architecture, security, AI bots) they don't let it take the easy way out.
 
 Each skill comes with concrete rules: checklists, templates, and the list of excuses the model tends to reach for ("it's a small change", "I'll add tests later") so it can't get away with them.
 
@@ -28,12 +28,12 @@ The wizard asks for the scope: **User** for all your sessions, or **Project** fo
 
 ### One skill at a time
 
-If you don't want all 12, each skill installs on its own (it's the same copy of files; install the full suite or the individual ones, not both):
+If you don't want all 13, each skill installs on its own (it's the same copy of files; install the full suite or the individual ones, not both):
 
 ```
-/plugin install fixer-en@sensei
-/plugin install data-schema-en@sensei
-/plugin install fixer-es@sensei
+/plugin install fixer@sensei
+/plugin install data-schema@sensei
+/plugin install reparador@sensei          # Spanish-version skills go by their Spanish names
 ```
 
 You can also do it visually: in `/plugin` open **Discover** and pick from the list. Individual skills work on their own; when one mentions another, that reference is optional and won't break if the other isn't installed.
@@ -46,10 +46,11 @@ You can also do it visually: in `/plugin` open **Discover** and pick from the li
 /plugin uninstall senior-engineer-en@sensei
 ```
 
-## The 12 skills
+## The 13 skills
 
 | Skill | What it makes the model do |
 |---|---|
+| `shaping` | When an idea or requirement isn't fully defined (at any point in the project, not just the start), it stops before building on assumptions. It asks one thing at a time, proposes 2 or 3 approaches with their downsides, and doesn't let go until the idea is shaped and approved by you. Catching itself about to fill a gap with its own assumption is itself a trigger. |
 | `planning` | Before writing a plan it asks the questions that matter (the five layers) and checks what already exists in the project, so it doesn't rebuild something that was already there. It splits the work into tasks you can verify and orders them by risk. |
 | `architect` | It won't recommend a stack without first asking you the nine things that actually drive the decision. It brings scale fantasies back down to earth and ties every choice to a real condition of yours. If it can't tie it to one, it's fashion, and it says so. |
 | `project-bootstrap` | No code until the intake is done. The decisions that get brutally expensive to change later (multi-tenancy, auth, data deletion) are made on day one. First a skeleton that runs end to end, then the features. |
@@ -68,7 +69,7 @@ You can also do it visually: in `/plugin` open **Discover** and pick from the li
 - Each skill has a short `SKILL.md` (the protocol, the rules, the red flags) and a `references/` folder with the detail, which the model opens only when it needs it. Until it's used, it barely takes up context.
 - The content is in English and the descriptions too (that's how Claude Code matches them). The forbidden-phrase tables are in English on purpose, because they catch exactly what the model is about to write.
 - The line that runs through all of them: **"Violating the letter of these rules is violating their spirit."** No task is "too simple" to skip the process.
-- The 12 were tested with a simple method: the same request, once without the skill and once with it, over test projects with traps set on purpose. In all 12 the skill changed the model's behavior for the better. From demanding proof where there used to be an empty "done ✅", to stopping a migration that took production down and plugging a cross-customer data leak in a bot.
+- The original 12 were tested with a simple method: the same request, once without the skill and once with it, over test projects with traps set on purpose. In all 12 the skill changed the model's behavior for the better. From demanding proof where there used to be an empty "done ✅", to stopping a migration that took production down and plugging a cross-customer data leak in a bot.
 
 ## Manual install (no plugin)
 

@@ -23,7 +23,7 @@ description: Use when about to claim any work is done, complete, implemented, de
 
 ## Cuándo NO aplica
 
-- Es un bug, error, test que falla o "sigue fallando" → usa el skill `fixer` si está instalado (su fase 5 es la versión para bugs de esta misma doctrina). Si no está instalado, este skill aplica igual: un bugfix también es trabajo que no se declara terminado sin evidencia ejecutada.
+- Es un bug, error, test que falla o "sigue fallando" → usa el skill `reparador` si está instalado (su fase 5 es la versión para bugs de esta misma doctrina). Si no está instalado, este skill aplica igual: un bugfix también es trabajo que no se declara terminado sin evidencia ejecutada.
 - Trabajo puramente conversacional sin artefacto ejecutable (una opinión, un plan). Ahí no hay nada que ejecutar — pero tampoco declares "terminado" nada ejecutable dentro de él.
 
 ## Red flags — DETENTE si te descubres escribiendo esto

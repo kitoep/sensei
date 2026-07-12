@@ -4,7 +4,7 @@ Español | [English](README.en.md)
 
 **Skills para Claude Code que hacen que el modelo trabaje como un senior y no como un junior con prisa.**
 
-Por default el modelo improvisa, te dice que "ya quedó" sin haberlo corrido, y te da la razón en todo. Estos 12 skills lo frenan. Le exigen preguntar antes de tirar código, correr las cosas antes de cantar victoria, y decirte cuando algo está mal aunque no lo quieras oír. Y en lo que sale caro de deshacer después (base de datos, arquitectura, seguridad, bots con IA) no lo dejan agarrar el camino fácil.
+Por default el modelo improvisa, te dice que "ya quedó" sin haberlo corrido, y te da la razón en todo. Estos 13 skills lo frenan. Le exigen preguntar antes de tirar código, correr las cosas antes de cantar victoria, y decirte cuando algo está mal aunque no lo quieras oír. Y en lo que sale caro de deshacer después (base de datos, arquitectura, seguridad, bots con IA) no lo dejan agarrar el camino fácil.
 
 Cada skill trae reglas concretas: checklists, plantillas, y la lista de excusas que el modelo suele soltar ("es un cambio chico", "al rato le pongo tests") para no dejárselas pasar.
 
@@ -28,12 +28,12 @@ El wizard te pregunta el alcance: **User** para todas tus sesiones, o **Project*
 
 ### Un skill a la vez
 
-Si no quieres los 12, cada skill se instala por separado (es la misma copia de archivos; instala la suite completa o los sueltos, no las dos cosas):
+Si no quieres los 13, cada skill se instala por separado (es la misma copia de archivos; instala la suite completa o los sueltos, no las dos cosas):
 
 ```
-/plugin install fixer-es@sensei
-/plugin install esquema-datos-es@sensei
-/plugin install fixer-en@sensei
+/plugin install reparador@sensei
+/plugin install esquema-datos@sensei
+/plugin install fixer@sensei          # los de la versión en inglés van con su nombre en inglés
 ```
 
 También puedes hacerlo visual: en `/plugin` entras a **Discover** y eliges de la lista. Los skills sueltos funcionan solos; cuando uno menciona a otro, esa referencia es opcional y no truena si el otro no está instalado.
@@ -46,18 +46,19 @@ También puedes hacerlo visual: en `/plugin` entras a **Discover** y eliges de l
 /plugin uninstall senior-engineer-es@sensei
 ```
 
-## Los 12 skills
+## Los 13 skills
 
 | Skill | Qué le obliga a hacer al modelo |
 |---|---|
-| `planning` | Antes de escribir un plan hace las preguntas que hacen falta (las cinco capas) y revisa qué ya existe en el proyecto, para no volver a construir algo que ya estaba. Parte el trabajo en tareas que se pueden verificar y las ordena por riesgo. |
-| `architect` | No te recomienda stack sin antes preguntarte las nueve cosas que de verdad definen la decisión. Baja a tierra las fantasías de escala y cada elección la justifica con una condición real tuya. Si no la puede justificar, es moda, y lo dice. |
-| `project-bootstrap` | Nada de código hasta terminar el intake. Las decisiones que luego salen carísimas de cambiar (multi-tenancy, auth, borrado de datos) se toman desde el día uno. Primero un esqueleto que corre de punta a punta, luego las features. |
-| `designer` | Regla que no se salta: no maqueta ni una pantalla hasta que exista un design system aprobado por ti. Trae el catálogo de las 12 señales que delatan un diseño hecho por IA, exige los 4 estados de cada pantalla (cargando, vacío, error, con datos) y corre antes que cualquier otro skill de diseño o de estética. |
-| `critic` | Te critica de frente, sin adularte. Arranca con el veredicto en la primera línea, primero arma la versión más fuerte de tu idea y luego la ataca, y te da mínimo 3 riesgos y 1 alternativa. Si lo presionas, no se echa para atrás. |
-| `fixer` | Para arreglar un bug, primero lo reproduce; sin reproducción no hay arreglo. Plantea hipótesis que se puedan descartar, va por la causa de raíz y busca el mismo patrón en todo el repo. Al test que prueba el arreglo lo ve fallar antes de confiar en él. Y trae un protocolo para cuando algo "sigue fallando". |
-| `tester` | Arma el plan de pruebas desde lo que no puede romperse, empezando por los casos que rompen y dejando el camino feliz al final. Siempre incluye la UI. No da nada por probado si quedan casos importantes sin correr. |
-| `security-compliance` | Dos modos: auditar código en busca de huecos, y avisarte mientras desarrollas. Revisa OWASP con búsquedas concretas, aislamiento entre clientes (multi-tenant y RLS) y protección de datos (GDPR, PCI y la ley mexicana). Solo marca algo como grave si arma el escenario que lo demuestra. |
+| `aterrizar` | Cuando una idea o un requerimiento no está bien definido (en cualquier punto del proyecto, no solo al inicio), frena antes de construir sobre suposiciones. Pregunta de una cosa a la vez, propone 2 o 3 enfoques con sus contras, y no suelta el tema hasta que la idea quede aterrizada y aprobada por ti. Si está por rellenar un hueco con una suposición propia, eso mismo lo activa. |
+| `planeacion` | Antes de escribir un plan hace las preguntas que hacen falta (las cinco capas) y revisa qué ya existe en el proyecto, para no volver a construir algo que ya estaba. Parte el trabajo en tareas que se pueden verificar y las ordena por riesgo. |
+| `arquitecto` | No te recomienda stack sin antes preguntarte las nueve cosas que de verdad definen la decisión. Baja a tierra las fantasías de escala y cada elección la justifica con una condición real tuya. Si no la puede justificar, es moda, y lo dice. |
+| `arranque` | Nada de código hasta terminar el intake. Las decisiones que luego salen carísimas de cambiar (multi-tenancy, auth, borrado de datos) se toman desde el día uno. Primero un esqueleto que corre de punta a punta, luego las features. |
+| `disenador` | Regla que no se salta: no maqueta ni una pantalla hasta que exista un design system aprobado por ti. Trae el catálogo de las 12 señales que delatan un diseño hecho por IA, exige los 4 estados de cada pantalla (cargando, vacío, error, con datos) y corre antes que cualquier otro skill de diseño o de estética. |
+| `critico` | Te critica de frente, sin adularte. Arranca con el veredicto en la primera línea, primero arma la versión más fuerte de tu idea y luego la ataca, y te da mínimo 3 riesgos y 1 alternativa. Si lo presionas, no se echa para atrás. |
+| `reparador` | Para arreglar un bug, primero lo reproduce; sin reproducción no hay arreglo. Plantea hipótesis que se puedan descartar, va por la causa de raíz y busca el mismo patrón en todo el repo. Al test que prueba el arreglo lo ve fallar antes de confiar en él. Y trae un protocolo para cuando algo "sigue fallando". |
+| `pruebas` | Arma el plan de pruebas desde lo que no puede romperse, empezando por los casos que rompen y dejando el camino feliz al final. Siempre incluye la UI. No da nada por probado si quedan casos importantes sin correr. |
+| `seguridad` | Dos modos: auditar código en busca de huecos, y avisarte mientras desarrollas. Revisa OWASP con búsquedas concretas, aislamiento entre clientes (multi-tenant y RLS) y protección de datos (GDPR, PCI y la ley mexicana). Solo marca algo como grave si arma el escenario que lo demuestra. |
 | `verificador` | Nada se declara terminado sin la prueba de que corre, pegada en el mismo mensaje. Distingue entre "verificado" y "lo apliqué pero no lo probé", y no reparte la palomita ✅ de a gratis. |
 | `esquema-datos` | Bases de datos y migraciones que no tumban producción. Pregunta por las consultas y el volumen antes de diseñar, nunca usa float para el dinero, hace los cambios peligrosos en dos pasos (expand/contract), pone los candados en la base de datos y comprueba los índices con EXPLAIN. |
 | `features-ia` | Features con LLMs sin inventar. Tiene prohibido escribir nombres de modelo o parámetros de memoria (los verifica contra la documentación), mete todo detrás de una sola capa que no depende del proveedor, arma las tools con contratos estrictos y filtrando por usuario, pone defensas contra prompt injection y no deja cambiar un prompt sin correr su set de pruebas. |
@@ -68,7 +69,7 @@ También puedes hacerlo visual: en `/plugin` entras a **Discover** y eliges de l
 - Cada skill tiene un `SKILL.md` corto (el protocolo, las reglas, las señales de alerta) y una carpeta `references/` con el detalle, que el modelo abre solo cuando lo necesita. Mientras no se usa, casi no ocupa contexto.
 - El contenido está en español y las descripciones en inglés (así las reconoce Claude Code). Las tablas de frases prohibidas van en español a propósito, porque atrapan justo lo que el modelo está por escribir.
 - La frase que cruza todos: **"Violar la letra de estas reglas es violar su espíritu."** No hay tarea "demasiado simple" para saltarse el proceso.
-- Los 12 se probaron con un método sencillo: el mismo pedido, una vez sin el skill y otra con él, sobre proyectos de prueba con trampas puestas a propósito. En los 12 el skill cambió la conducta del modelo para bien. Desde exigir pruebas donde antes había un "listo ✅" vacío, hasta frenar una migración que tumbaba producción y tapar una fuga de datos entre clientes en un bot.
+- Los 12 originales se probaron con un método sencillo: el mismo pedido, una vez sin el skill y otra con él, sobre proyectos de prueba con trampas puestas a propósito. En los 12 el skill cambió la conducta del modelo para bien. Desde exigir pruebas donde antes había un "listo ✅" vacío, hasta frenar una migración que tumbaba producción y tapar una fuga de datos entre clientes en un bot.
 
 ## Instalación manual (sin plugin)
 

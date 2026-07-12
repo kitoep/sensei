@@ -52,7 +52,7 @@ Desbloquea: si sí → `tenant_id` en todo el schema + aislamiento a nivel DB de
 
 **9. ¿Maneja datos personales o sensibles? ¿De qué jurisdicción son los titulares?** (México/LFPDPPP, UE/GDPR, salud, pagos)
 Por qué: compliance no es una feature que se agrega: define qué se cifra, qué se loggea, qué se puede borrar y dónde se hospeda.
-Desbloquea: cifrado en reposo, política de logs sin PII, mecanismo de borrado/anonimización, y si aplica el skill `security-compliance` desde el día 1.
+Desbloquea: cifrado en reposo, política de logs sin PII, mecanismo de borrado/anonimización, y si aplica el skill `seguridad` desde el día 1.
 
 **10. ¿De qué integraciones externas depende el corazón del producto?** (APIs de terceros, pasarelas, WhatsApp, aprobaciones de plataforma)
 Por qué: la integración externa es el riesgo que tú no controlas — cuotas, aprobaciones, cambios de API. Si el producto depende de una, esa integración se valida ANTES de construir alrededor de ella.

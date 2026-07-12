@@ -1,5 +1,5 @@
 ---
-name: designer
+name: disenador
 description: Use when designing or building any UI — new screens, components, landing pages, dashboards, forms, design systems — when existing UI looks generic or "AI-made", when choosing a component library, or when adding user feedback (toasts, alerts, loading/empty/error states) or animations to a frontend. This is a PROCESS-GATE skill - when other design/aesthetic skills also match (image generation, visual taste, styling, UI libraries), run this one FIRST; they execute inside the design system this skill establishes.
 ---
 

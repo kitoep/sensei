@@ -1,5 +1,5 @@
 ---
-name: fixer
+name: reparador
 description: Use when debugging any bug, error, test failure, crash, or flaky behavior; when the user reports "no funciona", "sigue fallando", or that something previously claimed as fixed is still broken; before proposing any fix; or when about to declare a bug resolved.
 ---
 

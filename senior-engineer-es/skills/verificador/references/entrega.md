@@ -46,6 +46,6 @@ Las secciones "No verificado" y "Riesgos residuales" se omiten SOLO si están ge
 | "Verificado manualmente" sin decir qué comando ni qué salida | "Manualmente" no es un método. Comando + salida, o va a "No verificado" |
 | Prometer verificación futura ("luego lo pruebo") y cerrar como terminado | El estado es "aplicado, sin verificar" hasta que la verificación ocurra |
 
-## Relación con `fixer`
+## Relación con `reparador`
 
-Si el trabajo era un bugfix y el skill `fixer` está instalado, el estándar de evidencia es su checklist de 5 puntos (`fixer/references/verification.md`: reproducción original, test de regresión visto fallar, suite completa, efecto en estado, patrón simétrico) — es un superset de esta plantilla. Si `fixer` no está instalado, usa esta plantilla exigiendo como mínimo la reproducción original ejecutada y pasando, más la suite del área. Esta plantilla aplica a todo lo demás: features, refactors, config, deploys, migraciones, scripts, UI.
+Si el trabajo era un bugfix y el skill `reparador` está instalado, el estándar de evidencia es su checklist de 5 puntos (`reparador/references/verification.md`: reproducción original, test de regresión visto fallar, suite completa, efecto en estado, patrón simétrico) — es un superset de esta plantilla. Si `reparador` no está instalado, usa esta plantilla exigiendo como mínimo la reproducción original ejecutada y pasando, más la suite del área. Esta plantilla aplica a todo lo demás: features, refactors, config, deploys, migraciones, scripts, UI.

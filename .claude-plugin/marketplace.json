@@ -8,178 +8,192 @@
     {
       "name": "senior-engineer-es",
       "source": "./senior-engineer-es",
-      "description": "[ES] SUITE COMPLETA — 12 skills en español. Instala esta O los individuales, no ambos."
+      "description": "[ES] SUITE COMPLETA con los 13 skills en español. Instala esta O los individuales, no ambos."
     },
     {
       "name": "senior-engineer-en",
       "source": "./senior-engineer-en",
-      "description": "[EN] FULL SUITE — 12 skills in English. Install this OR the individual ones, not both."
+      "description": "[EN] FULL SUITE with the 13 skills in English. Install this OR the individual ones, not both."
     },
 
     {
-      "name": "planning-es",
+      "name": "aterrizar",
       "source": "./senior-engineer-es",
       "strict": false,
-      "skills": ["./skills/planning"],
-      "description": "[ES] Planear como senior: 5 capas de preguntas, reconciliar contra el tracker ANTES, descomposición por riesgo."
+      "skills": ["./skills/aterrizar"],
+      "description": "[ES] Aterriza ideas difusas antes de planear o codear: preguntas de una en una, 2-3 enfoques, nada de construir sobre suposiciones."
     },
     {
-      "name": "architect-es",
+      "name": "planeacion",
       "source": "./senior-engineer-es",
       "strict": false,
-      "skills": ["./skills/architect"],
-      "description": "[ES] Arquitectura por condiciones reales: intake de 9 preguntas, desinfla fantasías de escala."
+      "skills": ["./skills/planeacion"],
+      "description": "[ES] Planear como senior: 5 capas de preguntas, revisar qué ya existe ANTES, descomposición por riesgo."
     },
     {
-      "name": "project-bootstrap-es",
+      "name": "arquitecto",
       "source": "./senior-engineer-es",
       "strict": false,
-      "skills": ["./skills/project-bootstrap"],
-      "description": "[ES] Arranque de proyectos: cero código antes del intake, cimientos imposibles de retrofitear el día 1."
+      "skills": ["./skills/arquitecto"],
+      "description": "[ES] Arquitectura por condiciones reales: intake de 9 preguntas, baja a tierra las fantasías de escala."
     },
     {
-      "name": "designer-es",
+      "name": "arranque",
       "source": "./senior-engineer-es",
       "strict": false,
-      "skills": ["./skills/designer"],
-      "description": "[ES] UI no genérica: puerta dura de design system, 12 tells de diseño IA, 4 estados obligatorios."
+      "skills": ["./skills/arranque"],
+      "description": "[ES] Arranque de proyectos: cero código antes del intake, las decisiones caras de cambiar se toman el día uno."
     },
     {
-      "name": "critic-es",
+      "name": "disenador",
       "source": "./senior-engineer-es",
       "strict": false,
-      "skills": ["./skills/critic"],
-      "description": "[ES] Crítica sin adulación: veredicto primero, steelman, 3 riesgos + 1 alternativa, mantener posición."
+      "skills": ["./skills/disenador"],
+      "description": "[ES] UI con identidad: design system aprobado antes de maquetar, las 12 señales del diseño hecho por IA, 4 estados por pantalla."
     },
     {
-      "name": "fixer-es",
+      "name": "critico",
       "source": "./senior-engineer-es",
       "strict": false,
-      "skills": ["./skills/fixer"],
-      "description": "[ES] Debugging con puertas: sin reproducción no hay fix, test de regresión visto fallar, protocolo sigue-fallando."
+      "skills": ["./skills/critico"],
+      "description": "[ES] Crítica de frente: veredicto en la primera línea, mínimo 3 riesgos y 1 alternativa, no se echa para atrás."
     },
     {
-      "name": "tester-es",
+      "name": "reparador",
       "source": "./senior-engineer-es",
       "strict": false,
-      "skills": ["./skills/tester"],
-      "description": "[ES] Plan de pruebas desde invariantes: adversarial primero, UI incluida siempre, veredicto con evidencia."
+      "skills": ["./skills/reparador"],
+      "description": "[ES] Bugs con método: sin reproducción no hay arreglo, causa raíz, el test de regresión se ve fallar antes de creerle."
     },
     {
-      "name": "security-compliance-es",
+      "name": "pruebas",
       "source": "./senior-engineer-es",
       "strict": false,
-      "skills": ["./skills/security-compliance"],
-      "description": "[ES] Seguridad (AUDIT) y prevención (GUARD): OWASP, RLS/multi-tenant, GDPR/PCI, tests adversariales."
+      "skills": ["./skills/pruebas"],
+      "description": "[ES] Plan de pruebas desde lo que no puede romperse: casos que rompen primero, la UI siempre incluida."
     },
     {
-      "name": "verificador-es",
+      "name": "seguridad",
+      "source": "./senior-engineer-es",
+      "strict": false,
+      "skills": ["./skills/seguridad"],
+      "description": "[ES] Auditar y prevenir: OWASP, aislamiento multi-tenant y RLS, protección de datos, solo marca grave lo que puede demostrar."
+    },
+    {
+      "name": "verificador",
       "source": "./senior-engineer-es",
       "strict": false,
       "skills": ["./skills/verificador"],
-      "description": "[ES] Anti-falso-verde: nada terminado sin evidencia ejecutada; 'verificado' vs 'aplicado, sin verificar'."
+      "description": "[ES] Nada se declara terminado sin la prueba pegada: 'verificado' no es lo mismo que 'aplicado sin probar'."
     },
     {
-      "name": "esquema-datos-es",
+      "name": "esquema-datos",
       "source": "./senior-engineer-es",
       "strict": false,
       "skills": ["./skills/esquema-datos"],
-      "description": "[ES] Schemas y migraciones que no rompen prod: expand/contract, constraints en DB, índices con EXPLAIN."
+      "description": "[ES] Bases de datos que no tumban producción: expand/contract, candados en la DB, índices comprobados con EXPLAIN."
     },
     {
-      "name": "features-ia-es",
+      "name": "features-ia",
       "source": "./senior-engineer-es",
       "strict": false,
       "skills": ["./skills/features-ia"],
-      "description": "[ES] Features con LLMs sin inventar: capa agnóstica, tool-calling con contratos, guardrails, golden set."
+      "description": "[ES] Features con LLMs sin inventar: capa única, tools con contratos, defensas contra injection, evals antes de cambiar prompts."
     },
     {
-      "name": "entrega-git-es",
+      "name": "entrega-git",
       "source": "./senior-engineer-es",
       "strict": false,
       "skills": ["./skills/entrega-git"],
-      "description": "[ES] Commits atómicos con diff revisado, PRs de un tema, descripciones auditables."
+      "description": "[ES] Commits de una sola cosa con el diff revisado, PRs de un tema, nada destructivo sin que se lo pidas."
     },
 
     {
-      "name": "planning-en",
+      "name": "shaping",
+      "source": "./senior-engineer-en",
+      "strict": false,
+      "skills": ["./skills/shaping"],
+      "description": "[EN] Shape fuzzy ideas before planning or coding: one question at a time, 2-3 approaches, never build on assumptions."
+    },
+    {
+      "name": "planning",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/planning"],
       "description": "[EN] Plan like a senior: 5 layers of questions, reconcile against reality FIRST, risk-ordered decomposition."
     },
     {
-      "name": "architect-en",
+      "name": "architect",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/architect"],
       "description": "[EN] Architecture from real conditions: 9-question intake, deflates scale fantasies."
     },
     {
-      "name": "project-bootstrap-en",
+      "name": "project-bootstrap",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/project-bootstrap"],
       "description": "[EN] Project bootstrap: zero code before intake, day-1 foundations that can't be retrofitted."
     },
     {
-      "name": "designer-en",
+      "name": "designer",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/designer"],
       "description": "[EN] Non-generic UI: hard design-system gate, 12 AI-design tells, 4 mandatory states."
     },
     {
-      "name": "critic-en",
+      "name": "critic",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/critic"],
       "description": "[EN] Critique without flattery: verdict first, steelman, 3 risks + 1 alternative, hold your position."
     },
     {
-      "name": "fixer-en",
+      "name": "fixer",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/fixer"],
       "description": "[EN] Debugging with gates: no repro no fix, regression test seen failing, still-failing protocol."
     },
     {
-      "name": "tester-en",
+      "name": "tester",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/tester"],
       "description": "[EN] Test plans from invariants: adversarial first, UI always included, evidence-backed verdict."
     },
     {
-      "name": "security-compliance-en",
+      "name": "security-compliance",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/security-compliance"],
       "description": "[EN] Security (AUDIT) and prevention (GUARD): OWASP, RLS/multi-tenant, GDPR/PCI, adversarial tests."
     },
     {
-      "name": "verifier-en",
+      "name": "verifier",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/verifier"],
       "description": "[EN] Anti-fake-green: nothing done without executed evidence; 'verified' vs 'applied, unverified'."
     },
     {
-      "name": "data-schema-en",
+      "name": "data-schema",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/data-schema"],
       "description": "[EN] Schemas and migrations that don't break prod: expand/contract, DB constraints, indexes via EXPLAIN."
     },
     {
-      "name": "ai-features-en",
+      "name": "ai-features",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/ai-features"],
       "description": "[EN] LLM features without hallucinating: provider-agnostic layer, tool contracts, guardrails, golden set."
     },
     {
-      "name": "git-delivery-en",
+      "name": "git-delivery",
       "source": "./senior-engineer-en",
       "strict": false,
       "skills": ["./skills/git-delivery"],

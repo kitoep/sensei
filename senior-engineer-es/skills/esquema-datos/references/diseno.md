@@ -9,7 +9,7 @@
 | 1 | ¿Qué consultas van a leer esta tabla? (las 3-5 principales, con sus filtros y orden) | Define índices, desnormalización y si el JSON es aceptable. |
 | 2 | ¿Cardinalidades? (1:1, 1:N, N:M; ¿cuántos hijos por padre típicamente?) | Define FKs, tablas puente y si conviene embeber. |
 | 3 | ¿Volumen esperado a 1-2 años? (¿cientos, millones, cientos de millones de filas?) | Define tipos de ID, particionado, y qué migraciones serán posibles después. |
-| 4 | ¿Es multi-tenant? ¿Cuál es la tenant key? | Toda tabla de tenant lleva `tenant_id`/`organization_id` NOT NULL + índice; para RLS y aislamiento en consultas, ver el skill `security-compliance` si está instalado. |
+| 4 | ¿Es multi-tenant? ¿Cuál es la tenant key? | Toda tabla de tenant lleva `tenant_id`/`organization_id` NOT NULL + índice; para RLS y aislamiento en consultas, ver el skill `seguridad` si está instalado. |
 | 5 | ¿Ciclo de vida? (¿se actualiza, es append-only, se borra, cuánto se retiene?) | Define soft-delete, tablas de historial/eventos, políticas de purga. |
 | 6 | ¿Ratio lectura/escritura? (¿dashboard que lee mucho, o ingesta que escribe mucho?) | Define cuántos índices te puedes permitir. |
 | 7 | ¿Quién más escribe/lee la DB? (otra app, ETL, humanos con SQL) | Si la app no es el único cliente, la validación en app NO protege nada: constraints obligatorios. |

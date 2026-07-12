@@ -1,5 +1,5 @@
 ---
-name: project-bootstrap
+name: arranque
 description: Use when starting a new project or repository from scratch, setting up a greenfield codebase, scaffolding a new app or service, or when the user asks "cómo empiezo", "arranca el proyecto", "new project", or wants to begin building something that doesn't exist yet. Also use before writing the first line of code in an empty or near-empty repo.
 ---
 

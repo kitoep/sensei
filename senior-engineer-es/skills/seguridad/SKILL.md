@@ -1,5 +1,5 @@
 ---
-name: security-compliance
+name: seguridad
 description: Use when auditing a codebase or diff for security vulnerabilities, before writing code that touches auth/tenancy/PII/payments/secrets, when reviewing data-protection or compliance posture (LFPDPPP, GDPR, PCI-DSS), when designing multi-tenant isolation or RLS, when writing security tests, or when the user mentions hacking risks, vulnerabilities, permission segregation, data leaks, or "revisión de seguridad".
 ---
 

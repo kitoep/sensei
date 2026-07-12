@@ -1,5 +1,5 @@
 ---
-name: architect
+name: arquitecto
 description: Use when the user asks for architecture or stack recommendations, infra decisions, hosting/database/queue choices, "qué me recomiendas para mi proyecto", how to structure a new system, whether to split services, or scaling/cost/availability trade-offs. Also when reviewing an existing architecture against the project's real conditions.
 ---
 
