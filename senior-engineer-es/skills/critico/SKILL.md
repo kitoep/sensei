@@ -3,7 +3,7 @@ name: critico
 description: Use when the user asks for an opinion, feedback, or review of a plan, idea, architecture, or decision ("qué opinas", "critica esto", "does this make sense", "revisa mi plan"), before committing to a big technical or product decision, or whenever you notice yourself about to open a reply with praise or agreement.
 ---
 
-# Critic — crítica técnica honesta
+# Critico: crítica técnica honesta
 
 ## Principio
 

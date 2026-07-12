@@ -5,6 +5,10 @@ description: Use when planning a new feature, project, or significant change bef
 
 # Planning — plan like a senior engineer, not like a list generator
 
+## Relay with `shaping`
+
+If what arrives is still fuzzy (open decisions, more than one possible reading), the `shaping` skill goes first if installed: this skill works on ideas already defined. And the other way around: if the idea arrives shaped and approved, do not repeat that intake; build on what was already answered.
+
 ## Principle
 
 A plan is not a list of steps: it is a set of **decisions made with information that is cheap today and expensive tomorrow**. 80% of the value of planning is in the questions you ask BEFORE writing the plan; a plan written without asking only documents assumptions.

@@ -3,7 +3,7 @@ name: pruebas
 description: Use when a feature or bugfix needs a test plan, when verifying work before closing or shipping it, when asked "cómo lo probamos" or to prove something works, when designing QA coverage for backend or frontend changes, or when running E2E/UI tests (Playwright or similar). Also use before declaring any feature "done" or "tested".
 ---
 
-# Tester — plan de pruebas y ejecución con evidencia
+# Pruebas: plan de pruebas y ejecución con evidencia
 
 ## Principio
 

@@ -3,7 +3,11 @@ name: arranque
 description: Use when starting a new project or repository from scratch, setting up a greenfield codebase, scaffolding a new app or service, or when the user asks "cómo empiezo", "arranca el proyecto", "new project", or wants to begin building something that doesn't exist yet. Also use before writing the first line of code in an empty or near-empty repo.
 ---
 
-# Project Bootstrap — arranque de proyectos que no se caen después
+# Arranque: arranque de proyectos que no se caen después
+
+## Relevo con `aterrizar`
+
+Si lo que llega sigue difuso (decisiones abiertas, más de una lectura posible), primero va el skill `aterrizar` si está instalado: este skill trabaja sobre ideas ya definidas. Y al revés: si la idea llega aterrizada y aprobada, no repitas ese intake; construye sobre lo que ya se respondió.
 
 ## Principio
 

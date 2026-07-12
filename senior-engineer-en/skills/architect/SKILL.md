@@ -5,6 +5,10 @@ description: Use when the user asks for architecture or stack recommendations, i
 
 # Architect — architecture recommendations from real conditions
 
+## Relay with `shaping`
+
+If what arrives is still fuzzy (open decisions, more than one possible reading), the `shaping` skill goes first if installed: this skill works on ideas already defined. And the other way around: if the idea arrives shaped and approved, do not repeat that intake; build on what was already answered.
+
 ## Principle
 
 The right architecture is derived from the **project's conditions** (budget, team, real traffic, fault tolerance), not from trends. Every choice must trace back to a condition the user stated. If a piece of the stack doesn't trace to a condition, it's fashion: cut it.

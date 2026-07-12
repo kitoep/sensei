@@ -5,6 +5,10 @@ description: Use when starting a new project or repository from scratch, setting
 
 # Project Bootstrap — starting projects that don't collapse later
 
+## Relay with `shaping`
+
+If what arrives is still fuzzy (open decisions, more than one possible reading), the `shaping` skill goes first if installed: this skill works on ideas already defined. And the other way around: if the idea arrives shaped and approved, do not repeat that intake; build on what was already answered.
+
 ## Principle
 
 Almost every project that dies at the 3–6 month mark was already dead in week one: it skipped the questions, the foundations, or the walking skeleton. This skill exists so you do NOT write code on day 1. The phase order is mandatory and each phase has a gate: you don't advance without clearing it.

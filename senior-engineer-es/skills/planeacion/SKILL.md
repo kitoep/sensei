@@ -3,7 +3,11 @@ name: planeacion
 description: Use when planning a new feature, project, or significant change before writing code — when the user says "cómo lo hacemos", "planea esto", "quiero construir X", asks for an implementation plan, or is about to start anything non-trivial without a written plan. Also use when a task keeps growing mid-implementation, a symptom that planning was skipped.
 ---
 
-# Planning — planear como un ingeniero senior, no como un generador de listas
+# Planeacion: planear como un ingeniero senior, no como un generador de listas
+
+## Relevo con `aterrizar`
+
+Si lo que llega sigue difuso (decisiones abiertas, más de una lectura posible), primero va el skill `aterrizar` si está instalado: este skill trabaja sobre ideas ya definidas. Y al revés: si la idea llega aterrizada y aprobada, no repitas ese intake; construye sobre lo que ya se respondió.
 
 ## Principio
 

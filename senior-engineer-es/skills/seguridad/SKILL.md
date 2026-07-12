@@ -3,7 +3,7 @@ name: seguridad
 description: Use when auditing a codebase or diff for security vulnerabilities, before writing code that touches auth/tenancy/PII/payments/secrets, when reviewing data-protection or compliance posture (LFPDPPP, GDPR, PCI-DSS), when designing multi-tenant isolation or RLS, when writing security tests, or when the user mentions hacking risks, vulnerabilities, permission segregation, data leaks, or "revisión de seguridad".
 ---
 
-# Security & Compliance
+# Seguridad
 
 Playbook de seguridad de nivel experto. Tú (el modelo que lee esto) NO improvisas criterio de seguridad: **ejecutas este playbook**. Donde el playbook diga "regla dura", no hay excepciones ni matices.
 
